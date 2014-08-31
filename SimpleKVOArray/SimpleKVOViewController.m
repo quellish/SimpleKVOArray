@@ -30,12 +30,6 @@
     [self endObservingValuesForKeysPaths:[self observedKeyPaths]];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -51,6 +45,14 @@
     // The system does it for you for declared properties.
     array = [self mutableArrayValueForKey:@"items"];
     [array addObject:@"foo"];
+    
+    // An alternative is to bracket the change to the property with the KVO notification methods
+    
+    /**
+    [self willChangeValueForKey:@"items"];
+    [[self items] addObject:@"foo"];
+    [self didChangeValueForKey:@"items"];
+    */
 }
 
 #pragma mark KVO
