@@ -18,12 +18,15 @@
 - (instancetype) initWithCoder:(NSCoder *)aDecoder {
     if ((self = [super initWithCoder:aDecoder])){
         items = [[NSMutableArray alloc] init];
+        // Start observing. Do this wherever makes sense in your implementation.
+        // Adding observers should always be balanced with a removal at the appropriate point in the instance's life cycle.
         [self beginObservingValuesForKeyPaths:[self observedKeyPaths] options:[self observationOptions]];
     }
     return self;
 }
 
 - (void) dealloc {
+    // Remove the observer
     [self endObservingValuesForKeysPaths:[self observedKeyPaths]];
 }
 
