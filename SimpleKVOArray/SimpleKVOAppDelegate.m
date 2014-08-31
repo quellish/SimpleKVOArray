@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Dan Zinngrabe. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "SimpleKVOAppDelegate.h"
 
-@implementation AppDelegate
+@implementation SimpleKVOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

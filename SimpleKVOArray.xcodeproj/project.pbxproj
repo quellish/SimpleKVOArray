@@ -12,9 +12,9 @@
 		1BD9C7BA19B2E8BB000275FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD9C7B919B2E8BB000275FC /* UIKit.framework */; };
 		1BD9C7C019B2E8BB000275FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1BD9C7BE19B2E8BB000275FC /* InfoPlist.strings */; };
 		1BD9C7C219B2E8BB000275FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9C7C119B2E8BB000275FC /* main.m */; };
-		1BD9C7C619B2E8BB000275FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9C7C519B2E8BB000275FC /* AppDelegate.m */; };
+		1BD9C7C619B2E8BB000275FC /* SimpleKVOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9C7C519B2E8BB000275FC /* SimpleKVOAppDelegate.m */; };
 		1BD9C7C919B2E8BB000275FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD9C7C719B2E8BB000275FC /* Main.storyboard */; };
-		1BD9C7CC19B2E8BB000275FC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9C7CB19B2E8BB000275FC /* ViewController.m */; };
+		1BD9C7CC19B2E8BB000275FC /* SimpleKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD9C7CB19B2E8BB000275FC /* SimpleKVOViewController.m */; };
 		1BD9C7CE19B2E8BB000275FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD9C7CD19B2E8BB000275FC /* Images.xcassets */; };
 		1BD9C7D519B2E8BB000275FC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD9C7D419B2E8BB000275FC /* XCTest.framework */; };
 		1BD9C7D619B2E8BB000275FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BD9C7B519B2E8BB000275FC /* Foundation.framework */; };
@@ -42,11 +42,11 @@
 		1BD9C7BF19B2E8BB000275FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1BD9C7C119B2E8BB000275FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BD9C7C319B2E8BB000275FC /* SimpleKVOArray-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleKVOArray-Prefix.pch"; sourceTree = "<group>"; };
-		1BD9C7C419B2E8BB000275FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1BD9C7C519B2E8BB000275FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1BD9C7C419B2E8BB000275FC /* SimpleKVOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKVOAppDelegate.h; sourceTree = "<group>"; };
+		1BD9C7C519B2E8BB000275FC /* SimpleKVOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKVOAppDelegate.m; sourceTree = "<group>"; };
 		1BD9C7C819B2E8BB000275FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1BD9C7CA19B2E8BB000275FC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1BD9C7CB19B2E8BB000275FC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1BD9C7CA19B2E8BB000275FC /* SimpleKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleKVOViewController.h; sourceTree = "<group>"; };
+		1BD9C7CB19B2E8BB000275FC /* SimpleKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleKVOViewController.m; sourceTree = "<group>"; };
 		1BD9C7CD19B2E8BB000275FC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1BD9C7D319B2E8BB000275FC /* SimpleKVOArrayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleKVOArrayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD9C7D419B2E8BB000275FC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -112,11 +112,11 @@
 		1BD9C7BB19B2E8BB000275FC /* SimpleKVOArray */ = {
 			isa = PBXGroup;
 			children = (
-				1BD9C7C419B2E8BB000275FC /* AppDelegate.h */,
-				1BD9C7C519B2E8BB000275FC /* AppDelegate.m */,
+				1BD9C7C419B2E8BB000275FC /* SimpleKVOAppDelegate.h */,
+				1BD9C7C519B2E8BB000275FC /* SimpleKVOAppDelegate.m */,
 				1BD9C7C719B2E8BB000275FC /* Main.storyboard */,
-				1BD9C7CA19B2E8BB000275FC /* ViewController.h */,
-				1BD9C7CB19B2E8BB000275FC /* ViewController.m */,
+				1BD9C7CA19B2E8BB000275FC /* SimpleKVOViewController.h */,
+				1BD9C7CB19B2E8BB000275FC /* SimpleKVOViewController.m */,
 				1BD9C7CD19B2E8BB000275FC /* Images.xcassets */,
 				1BD9C7BC19B2E8BB000275FC /* Supporting Files */,
 			);
@@ -249,8 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD9C7CC19B2E8BB000275FC /* ViewController.m in Sources */,
-				1BD9C7C619B2E8BB000275FC /* AppDelegate.m in Sources */,
+				1BD9C7CC19B2E8BB000275FC /* SimpleKVOViewController.m in Sources */,
+				1BD9C7C619B2E8BB000275FC /* SimpleKVOAppDelegate.m in Sources */,
 				1BD9C7C219B2E8BB000275FC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
